@@ -11,6 +11,9 @@ stage 和 HEAD指针保存在./git文件夹中。
 
 ##git的版本管理
 1.  建立本地版本库时，默认会创建master分支，所有修改都在该分支上。可以将分支看作链表，每一次提交都是建立一个新的结点插入，保存着本次提交后的快照，由HEAD指针指向最新插入的结点。
+2.  <pre><code>git branch //查看分支
+git checkout <name> //切换分支
+</code></pre>
 2. 每次执行commit命令，系统都会保存log。使用
     <pre><code>git log</code></pre>
     来查看日志。显示顺序由近到远。日志中commit字段后面是十六进制的版本号，可以做版本回退。
