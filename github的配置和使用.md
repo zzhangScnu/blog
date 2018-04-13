@@ -50,8 +50,8 @@ GitBash提供了linux的仿真环境，可以在Windows中使用linux命令。�
   <pre><code>git init</code></pre>
 4.  日常使用相关指令
     <pre><code> git status  //查看仓库状态
-     git add * 或 git add 文件 //将工作区中的本地文件提交到暂存区
-     git commit -m "message" //添加注释语句
+     git add * 或 git add 文件 //将工作区中的本地文件提交到暂存区（在删除了文件之后也是执行commit提交）
+     git commit -m "message" //添加注释语句
      git push //将暂存区中的文件提交到git服务器
      git log //查看提交日志
      git checkout //撤销工作区中文件的更改，让工作区与暂存区的文件保持一致
@@ -70,7 +70,7 @@ GitBash提供了linux的仿真环境，可以在Windows中使用linux命令。�
      <pre><code>git push -set-upstream origin master</code></pre>    
 ###遇到的问题
 1. 错误： fatal: No destination configured to push to. 
-    原因：不在clone下来的本地仓库里push。
+    原因：没有clone下来的本地仓库里push。
 2. 错误：failed to push some refs to 'git@github.com.
     原因：应该先pull至最新版本再push。
 3. 错误：git fatal: refusing to merge unrelated histories.
